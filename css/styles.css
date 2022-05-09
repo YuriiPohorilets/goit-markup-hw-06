@@ -17,6 +17,8 @@ Gradient overlay (action box):          rgba(47, 48, 58, 0.4);
 Opacity white (icon bg):                rgba(255, 255, 255, 0.1);
 Focus color opacity:                    rgba(33, 150, 243, 0.9);
 Backdrop color:                         rgba(0, 0, 0, 0.2);
+Input border color:                     rgba(255, 255, 255, 0.3);
+
 
 Team card shadow:                       0px 1px 3px rgba(0, 0, 0, 0.12),
                                         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -61,6 +63,7 @@ Cubic bezier:                           cubic-bezier(0.4, 0, 0.2, 1);
   --opacity-focus-color: rgba(33, 150, 243, 0.9);
   --subtitle-bg: rgba(47, 48, 58, 0.8);
   --backdrop-bg: rgba(0, 0, 0, 0.2);
+  --input-border: rgba(255, 255, 255, 0.3);
   --team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -633,6 +636,10 @@ img {
 }
 
 /* Join section */
+.join {
+  margin-right: 93px;
+}
+
 .join-subtitle {
   color: var(--active-white);
   margin-bottom: 20px;
@@ -669,6 +676,23 @@ img {
 .icon-link-join:focus {
   color: var(--active-white);
   background-color: var(--focus-color);
+}
+
+/* Footer form */
+.form-subscribe {
+  display: flex;
+}
+
+.form-subscribe input {
+  margin-right: 12px;
+  padding: 15px;
+  width: 385px;
+
+  color: var(--active-white);
+
+  background-color: rgba(33, 150, 243, 0);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
 }
 
 /* Portfolio.html */
