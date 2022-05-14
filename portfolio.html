@@ -296,28 +296,52 @@
           <h3 class="join-subtitle">Присоединяйтесь</h3>
           <ul class="join-icons list">
             <li class="icon-list-join">
-              <a class="icon-link-join link" href="#" target="_blank">
+              <a
+                class="icon-link-join link"
+                href="#"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="instagram"
+              >
                 <svg class="icons-join">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="icon-list-join">
-              <a class="icon-link-join link" href="#" target="_blank">
+              <a
+                class="icon-link-join link"
+                href="#"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="twitter"
+              >
                 <svg class="icons-join">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="icon-list-join">
-              <a class="icon-link-join link" href="#" target="_blank">
+              <a
+                class="icon-link-join link"
+                href="#"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="facebook"
+              >
                 <svg class="icons-join">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="icon-list-join">
-              <a class="icon-link-join link" href="#" target="_blank">
+              <a
+                class="icon-link-join link"
+                href="#"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="linkedin"
+              >
                 <svg class="icons-join">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -325,8 +349,93 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-box">
+          <h3 class="join-subtitle">Подпишитесь на рассылку</h3>
+          <form class="form-subscribe">
+            <label class="subscribe-label">
+              <input class="subscribe-input" type="email" name="subscribe" placeholder="E-mail" />
+            </label>
+            <button class="order-btn subscribe" type="button">
+              Подписаться
+              <svg class="subscribe-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
+      <!-- End footer side-->
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="modal-form">
+          <button class="btn-modal-close" type="button" data-modal-close>
+            <svg class="close-icon">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <span class="modal-title">Оставьте свои данные, мы вам перезвоним</span>
+          <ul class="form-list list">
+            <li class="form-item">
+              <label class="modal-label" for="user-name"> Имя </label>
+              <div class="form-input">
+                <input class="modal-input" type="text" name="name" id="user-name" />
+                <svg class="modal-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="form-item">
+              <label class="modal-label" for="user-phone"> Телефон </label>
+              <div class="form-input">
+                <input class="modal-input" type="text" name="phone" id="user-phone" />
+                <svg class="modal-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="form-item">
+              <label class="modal-label" for="user-email">Почта</label>
+              <div class="form-input">
+                <input class="modal-input" type="email" name="email" id="user-email" />
+                <svg class="modal-icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="form-item">
+              <label class="modal-label" for="user-comment">Комментарий</label>
+              <textarea
+                class="modal-area"
+                name="comment"
+                placeholder="Введите текст"
+                id="user-comment"
+              ></textarea>
+            </li>
+          </ul>
+
+          <label class="checkbox-label">
+            <span class="checkbox">
+              <input class="checkbox-input hidden" type="checkbox" />
+              <span class="checkbox-item"></span>
+              <svg class="checkbox-icon">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            <span class="lebel-item">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="agreement-link" href="#" target="_blank">Условия договора</a>
+            </span>
+          </label>
+
+          <button class="order-btn send" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
