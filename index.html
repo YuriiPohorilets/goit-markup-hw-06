@@ -581,15 +581,15 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button class="btn-modal-close" type="button" data-modal-close>
+          <svg class="close-icon">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
         <form class="modal-form">
-          <button class="btn-modal-close" type="button" data-modal-close>
-            <svg class="close-icon">
-              <use href="./images/icons.svg#icon-cross"></use>
-            </svg>
-          </button>
-          <span class="modal-title">Оставьте свои данные, мы вам перезвоним</span>
-          <ul class="form-list list">
-            <li class="form-item">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-list">
+            <div class="form-item">
               <label class="modal-label" for="user-name"> Имя </label>
               <div class="form-input">
                 <input class="modal-input" type="text" name="name" id="user-name" />
@@ -597,9 +597,9 @@
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </div>
-            </li>
+            </div>
 
-            <li class="form-item">
+            <div class="form-item">
               <label class="modal-label" for="user-phone"> Телефон </label>
               <div class="form-input">
                 <input class="modal-input" type="text" name="phone" id="user-phone" />
@@ -607,9 +607,9 @@
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </div>
-            </li>
+            </div>
 
-            <li class="form-item">
+            <div class="form-item">
               <label class="modal-label" for="user-email">Почта</label>
               <div class="form-input">
                 <input class="modal-input" type="email" name="email" id="user-email" />
@@ -617,9 +617,9 @@
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </div>
-            </li>
+            </div>
 
-            <li class="form-item">
+            <div class="form-item">
               <label class="modal-label" for="user-comment">Комментарий</label>
               <textarea
                 class="modal-area"
@@ -627,8 +627,8 @@
                 placeholder="Введите текст"
                 id="user-comment"
               ></textarea>
-            </li>
-          </ul>
+            </div>
+          </div>
 
           <label class="checkbox-label">
             <span class="checkbox">
